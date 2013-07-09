@@ -2,9 +2,12 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var buf = Buffer(256);
 
-buf = fs.readFileSync("/home/ubuntu/bitstarter/index.html");
+fs.readFileSync('/index.html', function (err, data) {
+  if (err) throw err;
+  return(data);
+});
+
 app.get('/', function(request, response) {
   response.send("Hello world3");
 });
