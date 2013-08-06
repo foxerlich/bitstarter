@@ -1,10 +1,10 @@
-1;2c<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Farmbook</title>
-<meta name="viewport" content="width-device-width, initial-scale=1.0">
- <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">*/
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
      <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
      <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
@@ -20,7 +20,7 @@ padding-top: 60px;
 .linediv-l {
 border-right: 1px white solid;
 }
-.linediv-c {
+.linediv-r {
 border-right: 1px white solid;
 }
 }
@@ -136,12 +136,13 @@ font-size: 11px;
     </div>
   </div>
   <div class="row-fluid pitch">
-    <div class="span5 offset1 video"> <img class="img-polaroid" src="http://placehold.it/480x300"> </div>
+    <div class="span5 offset1 video"> <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300"> </div>
    
     <!-- We define a new 'actions' div to contain statistics, order, and share buttons. -->
     <div class="span5 actions">
+      <div class="row-fluid">
       <div class="span8 offset2">
-        <div class="statistics">
+        <div class="row-fluid statistics">
           <div class="span4"> 
             <!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries. -->
             <div class="linediv-l">
@@ -163,6 +164,7 @@ font-size: 11px;
           </div>
         </div>
       </div>
+<div class="row-fluid">
       <div class="span10 offset1"> 
         <!-- Bootstrap progress bar --> 
         <!-- http:/twitter.github.io/bootstrap/components.html#progress -->
@@ -171,11 +173,15 @@ font-size: 11px;
           <div class="bar bar-warning" style="width: 40%;"></div>
         </div>
       </div>
+      </div>
+<div class="row-fluid">
       <div class="span6 offset3 order"> 
         <!-- Standard Bootstrap button. --> 
         <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
         <button class="btn btn-success btn-large">Preorder</button>
       </div>
+</div>
+<div class="row-fluid">
       <div class="span8 offset2 social"> 
         <!-- Social buttons are not included in default Bootstrap. --> 
         <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
@@ -183,6 +189,8 @@ font-size: 11px;
         <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
       </div>
     </div>
+</div>
+</div>
   </div>
   
   <!-- Beyond this part the marketing copy begins. --> 
@@ -190,10 +198,11 @@ font-size: 11px;
   <!-- http://twitter.github.io/bootstrap/base-css.html#images ->
     <!-- http://placehold.it -->
   <div class="row-fluid section1">
-    <div class="span5 offset1 asset"> <img class="img-polaroid" src="http://placehold.it/480x300"> </div>
+    <div class="span5 offset1 asset"> <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300"> </div>
     <div class="span5 copy">
       <p> Traditionally, farmers met at the bazaar on market day and exchanged seeds that had the traits they were looking for in the microenvironments on their partiular piece of property.  With the advent of hybrid seeds genetically engineered for herbicide resistance, the traditional farmer has become indebted to international seed companies. However, it is clear that the dependence these crops have on large quanitites of water and fertilizer means that ultimately they are not suitable for providing in a sustainable fashion the food needs of the world burgeoning population.  With the widespread distribution of cheap cell phones that are loaded with a simple facebook program( New York Times, 7/22/2013), the ability of farmers to develop there own seed varieites using traits that local farmers have posted on the local Farmbook, coupled with the availability of seeds from state and national seed banks,should enable farmers to once again to own and grow seeds that are optimized for yield on their particular microenvironments. This form of agriculture is essential for the ability of the world's farmers to rapidly respond to the dramatic shifts in temperature and rainfall that have been engendered by the groth of global warming.  </p>
     </div>
+</div>
   </div>
   <div class="row-fluid section2">
     <div class="span5 offset1 copy copy-right">
@@ -203,7 +212,8 @@ If our rangelands, forests and farms are to recover from the devastating heat, d
 
 	Finally, the National Plant Germplasm System, the Department of s national reserve of crop seeds, should be charged with evaluating hundreds of thousands of seed collections for drought and heat tolerance, as well as other adaptations climatic and given the financing to do so. Thousands of heirloom vegetables and heritage grains already in federal and state collections could be rapidly screened and then used by farmers for a fraction of what it costs a biotech firm to develop, patent and market a climate- crop.' New York Times, 7/22/2013 </p>
     </div>
-    <div class="span5 asset"> <img class="img-polaroid" src="http://placehold.it/480x300"> </div>
+</div>
+    <div class="span5 asset"> <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300"> </div>
   </div>
   
   <!-- For the FAQ, we introduce a little bit of JS, using the accordion. --> 
